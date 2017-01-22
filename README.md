@@ -1,7 +1,27 @@
 # Angular Starter
-by [The Startup Lab](http://thestartuplab.io)
 
-## Why!? There are plenty of good starters out there!
+<p align="center">
+  <a href="http://thestartuplab.io" target="_blank">
+    <img  src="http://res.cloudinary.com/dncekyetl/image/upload/c_scale,w_240/v1485111958/logo-avatar_vyzw9e.png">
+  </a>
+  
+</p>
+<p align="center">by The Startup Lab</p>
+
+
+&nbsp;
+
+
+## Built with
+
+* Angular
+* Webpack 2
+* Yarn
+
+&nbsp;
+
+
+## Why? Isn't there plenty of "starter" projects? 
 
 ![](http://i.imgur.com/nOqKfOE.gif)  
 
@@ -14,14 +34,6 @@ We decided to make our own for several reasons
 * Its a great learning experience and we suggest you try it too!   
 * We wanted to start with a more bare bones implementation of Angular & Webpack
 * Deployments in other starters favor a lot of popular SaSS hosting. We use services like Heroku and Amazon too, but some of our clients deploy in custom environments and need something different.
-
-
-
-## Built with
-
-* Angular
-* Webpack 2
-* Yarn
 
 
 
