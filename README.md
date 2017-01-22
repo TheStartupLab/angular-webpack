@@ -1,4 +1,4 @@
-# Angular Starter
+# Angular Startup
 
 <p align="center">
   <a href="http://thestartuplab.io" target="_blank">
