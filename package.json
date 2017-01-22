@@ -1,0 +1,46 @@
+{
+  "name": "angular-starter",
+  "version": "1.0.0",
+  "description": "angular starter app with webpack",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server --config webpack.config.js --progress --profile --watch --content-base src/"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.4",
+    "@angular/compiler": "^2.4.4",
+    "@angular/core": "^2.4.4",
+    "@angular/forms": "^2.4.4",
+    "@angular/http": "^2.4.4",
+    "@angular/platform-browser": "^2.4.4",
+    "@angular/platform-browser-dynamic": "^2.4.4",
+    "@angular/router": "^3.4.4",
+    "core-js": "^2.4.1",
+    "html-webpack-plugin": "^2.26.0",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "^5.0.2",
+    "ts-helpers": "^1.1.2",
+    "webpack-dev-middleware": "^1.9.0",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/hammerjs": "^2.0.34",
+    "@types/jasmine": "^2.5.40",
+    "@types/node": "^6.0.57",
+    "@types/selenium-webdriver": "^2.53.39",
+    "@types/source-map": "^0.5.0",
+    "@types/uglify-js": "^2.6.28",
+    "@types/webpack": "^2.1.0",
+    "angular2-template-loader": "^0.6.0",
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "css-loader": "^0.26.1",
+    "raw-loader": "^0.5.1",
+    "to-string-loader": "^1.1.5",
+    "typescript": "^2.1.4",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0",
+    "webpack-merge": "^2.0.0"
+  }
+}
