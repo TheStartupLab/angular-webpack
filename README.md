@@ -6,9 +6,6 @@
   </a>
   
 </p>
-<p align="center">by The Startup Lab</p>
-
-
 &nbsp;
 
 
