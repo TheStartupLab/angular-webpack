@@ -27,7 +27,7 @@
 
 &nbsp;
 
-Its true. Other Angular developers are making some [awesome starter projects](https://github.com/AngularClass/angular2-webpack-starter). Tools like the [Angular cli](https://github.com/angular/angular-cli) can easily allow you to scaffoled a project in seconds.
+Its true. Other Angular developers are making some [awesome starter projects](https://github.com/AngularClass/angular2-webpack-starter). Tools like the [Angular CLI](https://github.com/angular/angular-cli) can easily allow you to scaffoled a project in seconds.
 
 We decided to make our own for several reasons 
 
