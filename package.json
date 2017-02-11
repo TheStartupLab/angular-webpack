@@ -9,14 +9,14 @@
     "start:dev": "webpack-dev-server --config webpack.config.js --progress --profile --watch --content-base src/"
   },
   "dependencies": {
-    "@angular/common": "^2.4.4",
-    "@angular/compiler": "^2.4.4",
-    "@angular/core": "^2.4.4",
-    "@angular/forms": "^2.4.4",
-    "@angular/http": "^2.4.4",
-    "@angular/platform-browser": "^2.4.4",
-    "@angular/platform-browser-dynamic": "^2.4.4",
-    "@angular/router": "^3.4.4",
+    "@angular/common": "^2.4.7",
+    "@angular/compiler": "^2.4.7",
+    "@angular/core": "^2.4.7",
+    "@angular/forms": "^2.4.7",
+    "@angular/http": "^2.4.7",
+    "@angular/platform-browser": "^2.4.7",
+    "@angular/platform-browser-dynamic": "^2.4.7",
+    "@angular/router": "^3.4.7",
     "core-js": "^2.4.1",
     "html-webpack-plugin": "^2.26.0",
     "reflect-metadata": "^0.1.9",
@@ -39,7 +39,7 @@
     "raw-loader": "^0.5.1",
     "to-string-loader": "^1.1.5",
     "typescript": "^2.1.4",
-    "webpack": "2.2.0",
+    "webpack": "2.2.1",
     "webpack-dev-server": "2.2.0",
     "webpack-merge": "^2.0.0"
   }
