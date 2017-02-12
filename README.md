@@ -11,30 +11,35 @@
 
 ## Built with
 
-* Angular
+* Angula
 * Webpack 2
 * Yarn
 
 &nbsp;
 
+## Why Another Starter App? 
 
-## Why? Isn't there plenty of "starter" projects? 
+There are lots of good ways to go about creating your Angular app. The [angular-cli](https://github.com/angular/angular-cli) from the Angular team scaffolds a project in seconds, and the 
+popular [angular2-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter)  from the AngularClass has all the bells and whistles you could possibly need. 
 
-![](http://i.imgur.com/nOqKfOE.gif)  
+Fast food is nice, but its good to know how to hunt for yourself. We rebuilt our own Angular Starter project to better understand
+the ins and outs of an Angular + Webpack application. Big thanks to both teams for providing some awesome projects we refrenced when creating our own.
+We highly recommend anyone new to Angular or Webpack to do the same.
 
-&nbsp;
+## Why use this project over others?
 
-Its true. Other Angular developers are making some [awesome starter projects](https://github.com/AngularClass/angular2-webpack-starter). Tools like the [Angular CLI](https://github.com/angular/angular-cli) can easily allow you to scaffold a project in seconds.
+If you would like to be more hands-on with your webpack configuration, yet still have a rather simple starting point.
 
-We decided to make our own for several reasons 
+The project includes the bare minimum for setting up an angular + webpack project with unit and e2e coverage.
 
-* Its a great learning experience and we suggest you try it too!   
-* We wanted to start with a more bare bones implementation of Angular & Webpack
-* Deployments in other starters favor a lot of popular SaSS hosting. We use services like Heroku and Amazon too, but some of our clients deploy in custom environments and need something different.
+
+
 
 
 
 ## Available Yarn Commands
 
-* build     -- builds deploy artifact
-* start:dev -- starts dev server
+| Command        | Description  |
+| ------------- |:-------------:| 
+| start:dev     | starts dev server watching for changes |
+| test          | runs unit test with karma task runner |

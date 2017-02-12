@@ -1,5 +1,5 @@
 var path = require('path');
-var helpers = require('./config/helpers');
+var utils = require('./config/utils');
 
 //plugins
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
@@ -21,7 +21,7 @@ module.exports = {
       extensions: ['.ts', '.js'],
 
       // An array of directory names to be resolved to the current directory
-      modules: [helpers.root('src'), helpers.root('node_modules')]
+      modules: [utils.root('src'), utils.root('node_modules')]
   },
   
   module:{
@@ -37,13 +37,8 @@ module.exports = {
         {
           test: /\.html$/,
           use: 'raw-loader',
-          exclude: [helpers.root('src/index.html')]
+          exclude: [utils.root('src/index.html')]
         },
-        /*
-         * to string and css loader support for *.css files
-         * Returns file content as string
-         *
-         */
         {
           test: /\.css$/,
           use: ['to-string-loader', 'css-loader']
@@ -60,7 +55,7 @@ module.exports = {
         
         //Select the source chunks by chunk names. The chunk must be a child of the commons chunk
         chunks: ['main'],
-        
+                
         // The minimum number of chunks which need to contain a module before it's moved into the commons chunk.
         //shown is a custom function to detct if the module is in the node_modules via regexObj.test()
         minChunks: module => /node_modules\//.test(module.resource)
