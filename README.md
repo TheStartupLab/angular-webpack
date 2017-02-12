@@ -11,7 +11,7 @@
 
 ## Built with
 
-* Angula
+* Angular
 * Webpack 2
 * Yarn
 
