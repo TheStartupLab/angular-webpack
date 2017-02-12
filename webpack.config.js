@@ -19,8 +19,6 @@ module.exports = {
   //devtool: 'source-map',
   resolve: {
       extensions: ['.ts', '.js'],
-
-      // An array of directory names to be resolved to the current directory
       modules: [utils.root('src'), utils.root('node_modules')]
   },
   
@@ -68,8 +66,6 @@ module.exports = {
     /*
        * Plugin: HtmlWebpackPlugin
        * Description: Simplifies creation of HTML files to serve your webpack bundles.
-       * This is especially useful for webpack bundles that include a hash in the filename
-       * which changes every compilation.
        *
        * See: https://github.com/ampedandwired/html-webpack-plugin
        */
@@ -84,14 +80,6 @@ module.exports = {
       }),
   ],
 
-    /**
-     * Webpack Development Server configuration
-     * Description: The webpack-dev-server is a little node.js Express server.
-     * The server emits information about the compilation state to the client,
-     * which reacts to those events.
-     *
-     * See: https://webpack.github.io/docs/webpack-dev-server.html
-  **/
     devServer: {
       port: 8080,
       host: 'localhost',
