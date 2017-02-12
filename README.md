@@ -37,12 +37,13 @@ The project includes the bare minimum for setting up an angular + webpack projec
 
 ##### Install Dependencies
 
-Starts app on localhost:8080
 ``` 
 yarn install
 ```
 
 ##### Start Dev Server
+
+Starts app on localhost:8080
 
 ```
 yarn start:dev
