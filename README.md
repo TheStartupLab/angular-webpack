@@ -33,13 +33,22 @@ If you would like to be more hands-on with your webpack configuration, yet still
 The project includes the bare minimum for setting up an angular + webpack project with unit and e2e coverage.
 
 
+&nbsp;
 
+##### Install Dependencies
 
+``` 
+yarn install
+```
 
+##### Start Dev Server
 
-## Available Yarn Commands
+```
+yarn start:dev
+```
 
-| Command        | Description  |
-| ------------- |:-------------:| 
-| start:dev     | starts dev server watching for changes |
-| test          | runs unit test with karma task runner |
+##### Unit Test
+
+```
+yarn test
+```
