@@ -11,9 +11,9 @@
 
 ## Built with
 
-* Angular
-* Webpack 2
-* Yarn
+* [Angular](https://angular.io/)
+* [Webpack 2](https://webpack.js.org/)
+* [Yarn Package Manager](https://yarnpkg.com/en/)
 
 &nbsp;
 
