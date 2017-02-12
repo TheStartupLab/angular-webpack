@@ -46,12 +46,6 @@ module.exports = function (options) {
             utils.root('node_modules/@angular')
           ]
         },
-
-        /**
-         * Typescript loader support for .ts and Angular async routes via .async.ts
-         *
-         * See: https://github.com/s-panferov/awesome-typescript-loader
-         */
         {
           test: /\.ts$/,
           use: [
