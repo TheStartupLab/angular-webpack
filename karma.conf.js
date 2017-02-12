@@ -12,11 +12,9 @@ module.exports = function(config) {
       { pattern: './config/spec-bundle.js', watched: false },
     ],
 
-    // Webpack Config at ./webpack.test.js
     webpack: webpackConfig,
 
     webpackMiddleware: {
-      // webpack-dev-middleware configuration
       stats: 'errors-only'
     },
     /*
@@ -32,7 +30,6 @@ module.exports = function(config) {
      /*
      * test results reporter to use
      *
-     * possible values: 'dots', 'progress'
      * available reporters: https://npmjs.org/browse/keyword/karma-reporter
      */
       reporters: ['coverage', 'mocha', 'remap-coverage'],
