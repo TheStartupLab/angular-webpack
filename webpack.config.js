@@ -63,12 +63,7 @@ module.exports = {
         name: ['polyfills', 'vendor'].reverse()
       }),
     
-    /*
-       * Plugin: HtmlWebpackPlugin
-       * Description: Simplifies creation of HTML files to serve your webpack bundles.
-       *
-       * See: https://github.com/ampedandwired/html-webpack-plugin
-       */
+
       new HtmlWebpackPlugin({
         template: 'src/index.html',
         title: 'Angular Starter App',
@@ -90,7 +85,6 @@ module.exports = {
       }
     },
 
-  //nodejs settings?
   node: {
     global: true,
     crypto: 'empty',

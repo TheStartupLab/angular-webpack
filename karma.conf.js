@@ -18,7 +18,6 @@ module.exports = function(config) {
       stats: 'errors-only'
     },
     /*
-     * preprocess matching files before serving them to the browser
      * available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
      */
     preprocessors: { './config/spec-bundle.js': ['coverage', 'webpack', 'sourcemap'] },
@@ -28,8 +27,6 @@ module.exports = function(config) {
     },
 
      /*
-     * test results reporter to use
-     *
      * available reporters: https://npmjs.org/browse/keyword/karma-reporter
      */
       reporters: ['coverage', 'mocha', 'remap-coverage'],
