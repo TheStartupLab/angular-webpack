@@ -1,5 +1,3 @@
-# Angular Starter
-
 <p align="center">
   <a href="http://thestartuplab.io" target="_blank">
     <img  src="http://res.cloudinary.com/dncekyetl/image/upload/v1485113050/logo-black_u3s3c5.png">
