@@ -1,4 +1,11 @@
 
+ <p align="center">
+   <a href="http://thestartuplab.io" target="_blank">
+     <img  src="http://res.cloudinary.com/dncekyetl/image/upload/v1487242027/logo-black_f7n3tz.png">
+   </a>
+   
+ </p>
+ &nbsp;
 
 
 ## Built with
