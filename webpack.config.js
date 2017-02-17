@@ -1,7 +1,6 @@
 var path = require('path');
 var utils = require('./config/utils');
 
-//plugins
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -11,12 +10,11 @@ module.exports = {
     'main': './src/main.browser.ts'
   },
   output: {
-    //publicPath: '',
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.[name].js',
-    //sourceMapFilename: '[name].bundle.map',
+    sourceMapFilename: '[name].bundle.map',
   },
-  //devtool: 'source-map',
+  devtool: 'source-map',
   resolve: {
       extensions: ['.ts', '.js'],
       modules: [utils.root('src'), utils.root('node_modules')]
@@ -55,29 +53,22 @@ module.exports = {
         chunks: ['main'],
                 
         // The minimum number of chunks which need to contain a module before it's moved into the commons chunk.
-        //shown is a custom function to detct if the module is in the node_modules via regexObj.test()
+        //shown is a custom function to detect if the module is in the node_modules via regexObj.test()
         minChunks: module => /node_modules\//.test(module.resource)
       }),
       // Specify the correct order the scripts will be injected in
-      new CommonsChunkPlugin({
+    new CommonsChunkPlugin({
         name: ['polyfills', 'vendor'].reverse()
       }),
-    
-    /*
-       * Plugin: HtmlWebpackPlugin
-       * Description: Simplifies creation of HTML files to serve your webpack bundles.
-       *
-       * See: https://github.com/ampedandwired/html-webpack-plugin
-       */
-      new HtmlWebpackPlugin({
-        template: 'src/index.html',
-        title: 'Angular Starter App',
-        chunksSortMode: 'dependency',
-        metadata: {
-          
-        },
-        inject: true
-      }),
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      title: 'Angular Starter App',
+      chunksSortMode: 'dependency',
+      metadata: {
+        
+      },
+      inject: true
+    }),
   ],
 
     devServer: {
@@ -90,7 +81,6 @@ module.exports = {
       }
     },
 
-  //nodejs settings?
   node: {
     global: true,
     crypto: 'empty',

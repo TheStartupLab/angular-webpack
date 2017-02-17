@@ -5,9 +5,9 @@ module.exports = function(config) {
 
   config.set({
     basePath: '',
+    
     frameworks: ['jasmine'],
     
-
     files: [
       { pattern: './config/spec-bundle.js', watched: false },
     ],
@@ -17,33 +17,24 @@ module.exports = function(config) {
     webpackMiddleware: {
       stats: 'errors-only'
     },
-    /*
-     * preprocess matching files before serving them to the browser
-     * available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-     */
+  
     preprocessors: { './config/spec-bundle.js': ['coverage', 'webpack', 'sourcemap'] },
 
     coverageReporter: {
       type: 'in-memory'
     },
+    
+    reporters: ['coverage', 'mocha', 'remap-coverage'],
 
-     /*
-     * test results reporter to use
-     *
-     * available reporters: https://npmjs.org/browse/keyword/karma-reporter
-     */
-      reporters: ['coverage', 'mocha', 'remap-coverage'],
+    port: 9876,
 
-      port: 9876,
-      colors: true,
-      logLevel: config.LOG_INFO,
+    colors: true,
 
-    /*
-    * available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    */
-      browsers: [
-        'Chrome'
-      ]
+    logLevel: config.LOG_INFO,
+    
+    browsers: [
+      'Chrome'
+    ]
   
   });
 };
