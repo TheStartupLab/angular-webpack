@@ -68,32 +68,16 @@ module.exports = function (options) {
           ],
           exclude: [/\.e2e\.ts$/]
         },
-
-        /**
-         * Raw loader support for *.css files
-         * Returns file content as string
-         *
-         * See: https://github.com/webpack/raw-loader
-         * 
-         */
         {
           test: /\.css$/,
           loader: ['to-string-loader', 'css-loader'],
           exclude: [utils.root('src/index.html')]
         },
-
-        /**
-         * Raw loader support for *.html
-         * Returns file content as string
-         *
-         * See: https://github.com/webpack/raw-loader
-         */
         {
           test: /\.html$/,
           loader: 'raw-loader',
           exclude: [utils.root('src/index.html')]
         },
-
         /**
          * Instruments JS files with Istanbul for subsequent code coverage reporting.
          * Instrument only testing sources.

@@ -17,7 +17,7 @@ module.exports = function(config) {
     webpackMiddleware: {
       stats: 'errors-only'
     },
-  
+
     preprocessors: { './config/spec-bundle.js': ['coverage', 'webpack', 'sourcemap'] },
 
     coverageReporter: {
@@ -35,6 +35,6 @@ module.exports = function(config) {
     browsers: [
       'Chrome'
     ]
-  
+
   });
 };
