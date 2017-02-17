@@ -17,7 +17,7 @@
 
 ## Why Another Starter App? 
 
-There are lots of good ways to go about creating your Angular app. The [angular-cli](https://github.com/angular/angular-cli) from the Angular team scaffolds a project in seconds. 
+There are lots of good ways to go about creating your Angular app with webpack. The [angular-cli](https://github.com/angular/angular-cli) from the Angular team scaffolds a project in seconds. 
 The popular [angular2-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter) from the AngularClass has all the bells and whistles you could possibly need. 
 
 Fast food is nice, but its good to know how to hunt for yourself. We rebuilt our own Angular Starter project to better understand

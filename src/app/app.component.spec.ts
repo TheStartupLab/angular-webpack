@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
   beforeEach(() => {
@@ -7,6 +8,9 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports:[
+        RouterTestingModule
+      ]
     });
     TestBed.compileComponents();
   });
@@ -20,7 +24,7 @@ describe('AppComponent', () => {
   it(`should have as title 'Angular & Webpack 2 Starter'`, async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     let app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Angular & Webpack 2 Starter');
+    expect(app.title).toEqual('Angular-Webpack');
   }));
 
   
