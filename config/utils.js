@@ -7,4 +7,9 @@ function root(args) {
   return path.join.apply(path, [ROOT].concat(args));
 }
 
+function isWebpackDevServer() {
+  return process.argv[1] && !! (/webpack-dev-server/.exec(process.argv[1]));
+}
+
 exports.root = root;
+exports.isWebpackDevServer = isWebpackDevServer;

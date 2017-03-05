@@ -21,7 +21,10 @@
 
   <app>Loading...</app>
 
-  <script src="/webpack-dev-server.js"></script>
+  <% if (htmlWebpackPlugin.options.metadata.isDevServer) { %>
+    <!-- Webpack Dev Server reload -->
+    <script src="/webpack-dev-server.js"></script>
+  <% } %>
 
 </body>
 </html>
